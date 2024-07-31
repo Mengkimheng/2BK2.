@@ -1,0 +1,8 @@
+getgenv().Setting = {
+    ["WhiteScreen"] = false,
+    ["TimeReset"] = 4.5,
+    ["ModFarm"] = {
+        ["StopItemLegendary"] = true,
+        ["SummonKillDarkbeard"] = true
+    }
+}
