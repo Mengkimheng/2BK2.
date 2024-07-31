@@ -48,11 +48,5 @@ local Button = MainTab:CreateButton({
    Name = "Find ChestFarm",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
-
-   })
-   local Button = MainTap:CreateButton({
-      Name = "រកប្រអប់",
-      Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))() 
-      end,
+   end,
    })
