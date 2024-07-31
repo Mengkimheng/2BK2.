@@ -45,10 +45,10 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Find Fruits",
+   Name = "Find ChestFarm",
    Callback = function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
-   end,
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+
    })
    local Button = MainTap:CreateButton({
       Name = "រកប្រអប់",
