@@ -1,0 +1,6 @@
+local Button = MainTab:CreateButton({
+   Name = "Find Fruits",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
+   end,
+})
