@@ -45,7 +45,7 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Find Fruits",
+   Name = "រកផ្លែឈឺ",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
    end,
