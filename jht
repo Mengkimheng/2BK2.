@@ -26,7 +26,7 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("Fruits", nil) -- Title, Image
+local MainTab = Window:CreateTab("Minuy", nil) -- Title, Image
 local MainSection = MainTab:CreateSection("Blox Fruits")
 
 Rayfield:Notify({
@@ -38,39 +38,25 @@ Rayfield:Notify({
       Ignore = {
          Name = "Okay!",
          Callback = function()
-         print("The user tapped Okay!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
       end
    },
 },
 })
 
-local Button = MainTab:CreateButton({
-   Name = "Find ChestFarm",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
-   end,
-   })
+local MainSection = MainTab:CreateSection("Blox Fruits")
 
-   local MainSection = MainTab:CreateSection("Blox Fruits")
-
-   Rayfield:Notify({
-      Title = "You executed the script!",
-      Content = "Thanks for using RetributionMK8's Blox Fruits Script",
-      Duration = 5,
-      Image = nil,
-      Actions = { -- Notification Buttons
-         Ignore = {
-            Name = "Okay!",
-            Callback = function()
-            print("The user tapped Okay!")
-         end
-      },
+Rayfield:Notify({
+   Title = "You executed the script!",
+   Content = "Thanks for using RetributionMK8's Blox Fruits Script",
+   Duration = 5,
+   Image = nil,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+      end
    },
-   })
-
-   local Button = MainTab:CreateButton({
-      Name = "xnxx",
-      Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
-      end,
-      })
+},
+})
