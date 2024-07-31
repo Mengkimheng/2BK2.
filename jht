@@ -52,7 +52,7 @@ local Button = MainTab:CreateButton({
 })
 
 
-local Button = MainTap:CreateButton({
+local Button2 = MainTap:CreateButton({
    Name = "រកប្រអប់",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))() 
