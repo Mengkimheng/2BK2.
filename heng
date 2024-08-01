@@ -186,8 +186,8 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Update = {}
-local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
-
+local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&"
+height=420&format=png
 function Update:Window(text,logo,keybind)
 	local uihide = false
 	local abc = false
@@ -255,7 +255,7 @@ function Update:Window(text,logo,keybind)
 	Hub.Position = UDim2.new(0, 086, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = ".HEN"
+	Hub.Text = ".KH"
 	Hub.TextColor3 = Color3.fromRGB(255, 20, 0)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -1871,7 +1871,7 @@ if game.PlaceId == 2753915549 then
         for i,v in pairs(game:GetService("Workspace")["_WorldOrigin"].Locations:GetChildren()) do
             pcall(function()
                 if IslandESP then 
-                    if v.Name ~= "Sea" then
+                    if v.Name ~= "sea" then
                         if not v:FindFirstChild('NameEsp') then
                             local bill = Instance.new('BillboardGui',v)
                             bill.Name = 'NameEsp'
@@ -1904,7 +1904,7 @@ if game.PlaceId == 2753915549 then
     function UpdateChestEsp() 
         for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             pcall(function()
-                if string.find(v.Name,"Chest") then
+                if string.find(v.Name,"ប្រអប់") then
                     if ChestESP then
                         if string.find(v.Name,"Chest") then
                             if not v:FindFirstChild('NameEsp'..Number) then
@@ -1984,7 +1984,7 @@ if game.PlaceId == 2753915549 then
     function UpdateFlowerEsp() 
         for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             pcall(function()
-                if v.Name == "Flower2" or v.Name == "Flower1" then
+                if v.Name == "ផ្កាទី២" or v.Name == "ផ្កាទី១" then
                     if FlowerESP then 
                         if not v:FindFirstChild('NameEsp'..Number) then
                             local bill = Instance.new('BillboardGui',v)
@@ -2003,11 +2003,11 @@ if game.PlaceId == 2753915549 then
                             name.TextStrokeTransparency = 0.5
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         if v.Name == "ផ្កាទី១" then 
-                            name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+                            name.Text = ("ផ្កាកុលាបខៀវ" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         end
                         if v.Name == "ផ្កាទី២" then
-                            name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
+                            name.Text = ("ផ្កាកុលាបក្រហម" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         end
                     else
@@ -2362,7 +2362,7 @@ local games = {
               " "
                    ..
 
-                        Gamename.. "!" .. " 2BK2.bk Loadded"  .."\n Welcome "..game.Players.LocalPlayer.DisplayName
+                        Gamename.. "!" .. " 2BK2.BK Loadded"  .."\n Welcome "..game.Players.LocalPlayer.DisplayName
             )
       end
    }
@@ -2415,19 +2415,19 @@ end
 
 local Library = Update:Window("2BK2","",Enum.KeyCode.RightControl);
 main = Library:Tab("កន្លែងដើម",7072717697)
-Main = Library:Tab("auto រក Level",7072706351)
+Main = Library:Tab("ហ្វាមល្វែលដោយខ្លួនអែង",7072706351)
 iain = Library:Tab("Auto",7072706318)
-Ss = Library:Tab("Auto Stats",7040410130)
-P = Library:Tab("Players",7072724538)
+Ss = Library:Tab("Auto អាប់ល្វែល",7040410130)
+P = Library:Tab("អ្នកលេង",7072724538)
 T = Library:Tab("ប្តូរទីតាំង",6035190846)
 R = Library:Tab("Raid",7044284832)
-S = Library:Tab("Buy Item",7072715646)
+S = Library:Tab("ទិញុរបស់",7072715646)
 D = Library:Tab("Devil Fruit",4483362748)
 Misc = Library:Tab("Misc",7044233235)
 set = Library:Tab("Settings",6034509993)
 local logs = game:HttpGet("https://raw.githubusercontent.com/accountnop/magmaisgay/main/logs")
 
-main:Label("Welcome "..game.Players.LocalPlayer.DisplayName.. " To Nub.xyz")
+main:Label("Welcome "..game.Players.LocalPlayer.DisplayName.. "To 2BK2")
 main:Label("By Teres")
 main:Label("Ui Lib:???")
 --main:Label("Server Time:")
@@ -2449,7 +2449,7 @@ spawn(function()
     end
 end)
 
-Client = main:Label("FPS Player")
+Client = main:Label("FPS អ្នកលេង")
 
 function UpdateClient()
     local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
@@ -2502,13 +2502,13 @@ main:Button("Copy You JobId",function()
               end
            end
     
-    local SelectWeapona = Main:Dropdown("Select Weapon",WeaponList,function(value)
+    local SelectWeapona = Main:Dropdown("ស្វែងរកអាវុធ",WeaponList,function(value)
         _G.SelectWeapon = value
 		_G.Setting_table.Weapon = value
 		Update_Setting(getgenv()['MyName'])
     end)
     
-    Main:Button("Refresh Weapon",function()
+    Main:Button("ស្វែងរក",function()
         SelectWeapona:Clear()
         for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do 
             SelectWeapona:Add(v.Name)
@@ -2558,7 +2558,7 @@ end)
     --	Main:Line()
      Main:Seperator("Auto រក Level")   
 
-Main:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
+Main:Toggle("ហ្វាមល្វែលដោយខ្លួនអែង",_G.AutoFarm,function(value)
 if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
 Text("រើសបានតែមួយប៉ុណ្ណោះ")
@@ -2572,7 +2572,7 @@ else
         StopTween(_G.AutoFarm)
 			end
     end)
-	Main:Toggle("Auto រក ឆ្អឹង ", _G.Setting_table.Farm_Bone,function(vu)
+	Main:Toggle("រកឆ្អឹង Bone ", _G.Setting_table.Farm_Bone,function(vu)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
 Text("រើសបានតែមួយប៉ុណ្ណោះ")
@@ -2906,7 +2906,7 @@ _G.Chest12 = nil
 		end
 	end
    end
-Main:Toggle("Auto farm ប្រអប់",false,function(v)
+Main:Toggle("រកប្រអប់",false,function(v)
 Text("Beta Function!")        
  getgenv().Chest = v
 end)
@@ -3060,7 +3060,7 @@ TP(_G.Chest_15500.CFrame)
     Main:Toggle("Auto Cake Prince",_G.AutoDoughtBoss,function(value)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("ជ្រើសរើសបានមួយ")
 
 else
         _G.AutoDoughtBoss = value
@@ -3168,7 +3168,7 @@ else
         end
     end)
     
-    Main:Seperator("Boss Farm")
+    Main:Seperator("វ៉ៃមេ_Boss")
     
         local Boss = {}
     
@@ -3181,11 +3181,11 @@ else
         end
     end
     
-    local BossName = Main:Dropdown("Select Boss",Boss,function(value)
+    local BossName = Main:Dropdown("ជ្រើសរើសមេ_Boss",Boss,function(value)
         _G.SelectBoss = value
     end)
     
-    Main:Button("Refresh Boss",function()
+    Main:Button("ស្វែងរកមេ_Boss",function()
         BossName:Clear()
             for i, v in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
             if string.find(v.Name, "Boss") then
@@ -3194,10 +3194,10 @@ else
         end
     end)
     
-    Main:Toggle("Auto Farm Boss",_G.AutoFarmBoss,function(value)
+    Main:Toggle("ទៅវ៉ៃមេ",_G.AutoFarmBoss,function(value)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("ជ្រើសរើសបានមួយ")
 else
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
         _G.AutoFarmBoss = value
@@ -3783,7 +3783,7 @@ end)
 	end)
 	
 
-    Main:Seperator("Farm Level អីវ៉ាន់")
+    Main:Seperator("រកល្វែលអីវ៉ាន់ផ្សេងៗ")
     
     _G.Kill_At = 1
 
@@ -4087,7 +4087,7 @@ else
         end)
     end)
     
-    Main:Toggle("Auto Farm Level កាំភ្លើង",_G.AutoFarmGunMastery,function(value)
+    Main:Toggle("រកល្វែលកាំភ្លើង_Gun",_G.AutoFarmGunMastery,function(value)
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
 Text("រើសបានតែមួយប៉ុណ្ណោះ")
@@ -4099,7 +4099,7 @@ else
 		end
     end)
 
-	    Main:Toggle("Auto Level ដាវ",_G.Setting_table.Farm_Sword,function(vu)
+	    Main:Toggle("រកល្វែលដាវ_Sword",_G.Setting_table.Farm_Sword,function(vu)
 	
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
@@ -5518,7 +5518,7 @@ end)
     iain:Toggle("Auto Elite Hunter",_G.AutoElitehunter,function(value)
 		          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("ជ្រើសរើសបានមួយ")
 else
         _G.AutoElitehunter = value
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
@@ -9332,3 +9332,4 @@ spawn(function()
     end
 end)
 --2BK2
+	 
