@@ -54,6 +54,6 @@ local Button = MainTab:CreateButton({
 local Button = MainTab:CreateButton({
    Name = "ដើរ រកប្រអប់",
    Callback = function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
    end,
 })
