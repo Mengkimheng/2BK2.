@@ -59,8 +59,8 @@ local Button = MainTab:CreateButton({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Find Fruits",
+   Name = "Farm level",
    Callback = function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
+   loadstring(game:HttpGet(‘https://raw.githubusercontent.com/Domadicoof/Domadicoof/c9f17c5f7d7149abb2686c566b3576b8e04c0605/Talk%20HubBeta.lua’))()
    end,
 })
