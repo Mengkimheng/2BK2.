@@ -121,12 +121,12 @@ end
 local DINOHUB = Instance.new("ScreenGui")
 local OPENCLOSE = Instance.new("TextButton")
 
-DINOHUB.Name = "Nub Hub"
+DINOHUB.Name = "2BK2"
 DINOHUB.Parent = game.CoreGui        --CoreGui
 DINOHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 
-do local GUI = game.CoreGui:FindFirstChild("Nub Hub");if GUI then GUI:Destroy();end;if _G.Color == Color3.fromRGB(255, 0, 0) then
+do local GUI = game.CoreGui:FindFirstChild("2BK2");if GUI then GUI:Destroy();end;if _G.Color == Color3.fromRGB(255, 0, 0) then
        _G.Color = Color3.fromRGB(255, 255, 255)
    end 
 end
@@ -255,14 +255,14 @@ function Update:Window(text,logo,keybind)
 	Hub.Position = UDim2.new(0, 086, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = ".xyz"
+	Hub.Text = ".HEN"
 	Hub.TextColor3 = Color3.fromRGB(255, 20, 0)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 
 local version = game:HttpGet("https://raw.githubusercontent.com/accountnop/magmaisgay/main/version")
 local ver = Instance.new("TextLabel")
-	ver.Name = "ver"
+	ver.Name = "2BK2"
 	ver.Parent = Top
 	ver.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ver.BackgroundTransparency = 1.000
@@ -274,7 +274,7 @@ local ver = Instance.new("TextLabel")
 	ver.TextSize = 13.000
 	ver.TextXAlignment = Enum.TextXAlignment.Left
 	local ver1 = Instance.new("TextLabel")
-	ver1.Name = "ver"
+	ver1.Name = "2BK2"
 	ver1.Parent = Top
 	ver1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ver1.BackgroundTransparency = 1.000
@@ -1950,7 +1950,7 @@ if game.PlaceId == 2753915549 then
         for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             pcall(function()
                 if DevilFruitESP then
-                    if string.find(v.Name, "Fruit") then   
+                    if string.find(v.Name, "ផ្លែឈឺ") then   
                         if not v.Handle:FindFirstChild('NameEsp'..Number) then
                             local bill = Instance.new('BillboardGui',v.Handle)
                             bill.Name = 'NameEsp'..Number
@@ -2002,11 +2002,11 @@ if game.PlaceId == 2753915549 then
                             name.BackgroundTransparency = 1
                             name.TextStrokeTransparency = 0.5
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
-                        if v.Name == "Flower1" then 
+                        if v.Name == "ផ្កាទី១" then 
                             name.Text = ("Blue Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         end
-                        if v.Name == "Flower2" then
+                        if v.Name == "ផ្កាទី២" then
                             name.Text = ("Red Flower" ..' \n'.. round((game:GetService('Players').LocalPlayer.Character.Head.Position - v.Position).Magnitude/3) ..' M')
                             name.TextColor3 = Color3.fromRGB(255, 0, 0)
                         end
@@ -2362,7 +2362,7 @@ local games = {
               " "
                    ..
 
-                        Gamename.. "!" .. " \Nub.xyz Loadded"  .."\n Welcome "..game.Players.LocalPlayer.DisplayName
+                        Gamename.. "!" .. " 2BK2.bk Loadded"  .."\n Welcome "..game.Players.LocalPlayer.DisplayName
             )
       end
    }
@@ -2413,13 +2413,13 @@ else
 	_G.Dis = true
 end
 
-local Library = Update:Window("Nub","",Enum.KeyCode.RightControl);
-main = Library:Tab("Home",7072717697)
-Main = Library:Tab("AutoFarm",7072706351)
+local Library = Update:Window("2BK2","",Enum.KeyCode.RightControl);
+main = Library:Tab("កន្លែងដើម",7072717697)
+Main = Library:Tab("auto រក Level",7072706351)
 iain = Library:Tab("Auto",7072706318)
 Ss = Library:Tab("Auto Stats",7040410130)
 P = Library:Tab("Players",7072724538)
-T = Library:Tab("Teleport",6035190846)
+T = Library:Tab("ប្តូរទីតាំង",6035190846)
 R = Library:Tab("Raid",7044284832)
 S = Library:Tab("Buy Item",7072715646)
 D = Library:Tab("Devil Fruit",4483362748)
@@ -2467,8 +2467,8 @@ main:Label("Logs:\n \n")
 main:Label("\n"..logs.."\n ")
 
 main:Line()
-main:Button("Join On Discord (New!)",function()
-getgenv().InviteCode = "a4qMkuHA"
+main:Button("Join Telegram ! ",function()
+getgenv().InviteCode = "https://t.me/brokhl"
 
 --Example getgenv().InviteCode = "pATHmbedmh"
 
@@ -2524,18 +2524,18 @@ main:Button("Copy You JobId",function()
 	Main:Line()
 
 	MIo = {
-	"Super Fast",
-	"Fast",
-	"Smooth"
+	"លឿនខ្លាំង",
+	"លឿនល្មម",
+	"យឺត"
 }
 	    Main:Dropdown("Select FastAttack Delay",MIo,function(vu)
         _G.Setting_table.FastAttack_Mode = vu
 	Update_Setting(getgenv()['MyName'])
-	if _G.Setting_table.FastAttack_Mode == "Fast" then
+	if _G.Setting_table.FastAttack_Mode == "លឿនល្មម" then
 		_G.Fast_Delay = 0.1
-	elseif _G.Setting_table.FastAttack_Mode == "Smooth" then
+	elseif _G.Setting_table.FastAttack_Mode == "យឺត" then
 		_G.Fast_Delay = 0.3
-	elseif _G.Setting_table.FastAttack_Mode == "Super Fast" then
+	elseif _G.Setting_table.FastAttack_Mode == "លឿនខ្លាំង" then
 		_G.Fast_Delay = 0
 	end
     end)
@@ -2556,12 +2556,12 @@ spawn(function()
   end
 end)
     --	Main:Line()
-     Main:Seperator("Auto Farm")   
+     Main:Seperator("Auto រក Level")   
 
 Main:Toggle("AutoFarm Level",_G.AutoFarm,function(value)
 if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 
 else
 
@@ -2572,10 +2572,10 @@ else
         StopTween(_G.AutoFarm)
 			end
     end)
-	Main:Toggle("Auto Farm Bone", _G.Setting_table.Farm_Bone,function(vu)
+	Main:Toggle("Auto រក ឆ្អឹង ", _G.Setting_table.Farm_Bone,function(vu)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 
 else
  Auto_Farm_Bone = vu
@@ -2634,7 +2634,7 @@ end)
 		Main:Toggle("AutoFarm Ectoplasma",_G.AutoEctoplasm ,function(t)
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 
 else
   _G.AutoEctoplasm = t
@@ -2906,7 +2906,7 @@ _G.Chest12 = nil
 		end
 	end
    end
-Main:Toggle("AutoFarm Chest",false,function(v)
+Main:Toggle("Auto farm ប្រអប់",false,function(v)
 Text("Beta Function!")        
  getgenv().Chest = v
 end)
@@ -3240,7 +3240,7 @@ else
     Main:Toggle("Auto Farm All Boss",_G.AutoAllBoss,function(value)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
         _G.AutoAllBoss = value
         StopTween(_G.AutoAllBoss)
@@ -3250,7 +3250,7 @@ else
     Main:Toggle("Auto Farm All Boss Hop",_G.AutoAllBossHop,function(value)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 
 else
         _G.AutoAllBossHop = value
@@ -3755,7 +3755,7 @@ end)
     end
 end) 
     
-        Main:Toggle("White Screen",_G.WhiteScreen,function(value)
+        Main:Toggle("ផ្ទាំសរ",_G.WhiteScreen,function(value)
     _G.WhiteScreen = value
 if _G.WhiteScreen == true then
     game:GetService("RunService"):Set3dRenderingEnabled(false)
@@ -3783,7 +3783,7 @@ end)
 	end)
 	
 
-    Main:Seperator("Mastery Farm")
+    Main:Seperator("Farm Level អីវ៉ាន់")
     
     _G.Kill_At = 1
 
@@ -3828,7 +3828,7 @@ end
 	   Main:Toggle("Auto Farm Devil Fruit Mastery",_G.AutoFarmFruitMastery,function(value)
        	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	    _G.AutoFarmFruitMastery = value
     --   _G.Kill_At = value
@@ -4087,10 +4087,10 @@ else
         end)
     end)
     
-    Main:Toggle("Auto Farm Gun Mastery",_G.AutoFarmGunMastery,function(value)
+    Main:Toggle("Auto Farm Level កាំភ្លើង",_G.AutoFarmGunMastery,function(value)
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
         _G.AutoFarmGunMastery = value
       --  _G.Kill_At = value
@@ -4099,11 +4099,11 @@ else
 		end
     end)
 
-	    Main:Toggle("Auto Farm Sword",_G.Setting_table.Farm_Sword,function(vu)
+	    Main:Toggle("Auto Level ដាវ",_G.Setting_table.Farm_Sword,function(vu)
 	
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	Auto_Farm_Sword = vu
 	_G.Setting_table.Farm_Sword = vu
@@ -4281,12 +4281,12 @@ end)
         end
     end)
 
-iain:Seperator("Worlds")
+iain:Seperator("កោះ")
 
-        iain:Toggle("Auto Second Sea",_G.AutoSecondSea,function(value)
+        iain:Toggle("Auto ទៅកោះទី២",_G.AutoSecondSea,function(value)
 			if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
             _G.AutoSecondSea = value
             StopTween(_G.AutoSecondSea)
@@ -4349,10 +4349,10 @@ else
         end)
     
 
-    iain:Toggle("Auto Third Sea",_G.AutoThirdSea,function(value)
+    iain:Toggle("Auto ទៅកោះទី៣",_G.AutoThirdSea,function(value)
 		if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
             _G.AutoThirdSea = value
             StopTween(_G.AutoThirdSea)
@@ -4404,10 +4404,10 @@ else
     
     if World2 then
 
-        iain:Toggle("Auto Farm Factory",_G.AutoFactory,function(value)
+        iain:Toggle("Auto Farm រោងច្រ",_G.AutoFactory,function(value)
 			if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
             _G.AutoFactory = value
             StopTween(_G.AutoFactory)
@@ -4461,7 +4461,7 @@ else
 	    iain:Toggle("Auto Farm Dough King",_G.Cake,function(value)
 			if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
         _G.Cake = value
 			end
@@ -4583,7 +4583,7 @@ else
 		 iain:Toggle("Auto Fish Tails (Sea 1 And Sea 3)",_G.FishTails,function(value)
            	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 		     if sea3 == true then
 		           _G.FishTails1 = value
@@ -4655,7 +4655,7 @@ else
 			 iain:Toggle("Auto Magma Ore (Sea 1 and Sea 2)",_G.Ore,function(value)
                	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	  if newworld == true then
 		_G.Ore1 = value
@@ -4726,7 +4726,7 @@ else
 				 iain:Toggle("Auto Mystic (Sea 2)",_G.Mystic,function(value)
                   	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 		_G.Mystic = value
 				topos(CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376))
@@ -4772,7 +4772,7 @@ else
 	 iain:Toggle("Auto Leather And Scrap Metal (Sea 3,Sea 2,Sea 1)",_G.Leather,function(value)
    	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
     if World3 == true then
 	    _G.Leather = value
@@ -4790,7 +4790,7 @@ else
     			 iain:Toggle("Auto Angel Wings (Sea 1)",_G.Angel,function(value)
 	          	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 			    if World1 == true then
 	            _G.Angel = value
@@ -4802,7 +4802,7 @@ else
                iain:Toggle("Auto Radioactive Material (Sea 2)",_G.Radio,function(value)
 	         	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 			    if World2 == true then
 	            _G.Radio = value
@@ -4814,7 +4814,7 @@ else
                iain:Toggle("Auto Vampire Fang (Sea 2)",_G.vamp,function(value)
 	          	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 			    if World2 == true then
 	            _G.vamp = value
@@ -4826,7 +4826,7 @@ else
                iain:Toggle("Auto Mini Tusk (Sea 3)",_G.Tusk,function(value)
 	            	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 				if World3 == true then
 	            _G.Tusk = value
@@ -4838,7 +4838,7 @@ else
                iain:Toggle("Auto Gunpowder (Sea 3)",_G.powder,function(value)
 	            	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 				if World3 == true then
 	            _G.powder = value
@@ -4850,7 +4850,7 @@ else
                iain:Toggle("Auto Demonic Wisp (Sea 3)",_G.demonic,function(value)
 	         	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 			    if World3 == true then
 	            _G.demonic = value
@@ -5379,7 +5379,7 @@ else
     iain:Toggle("Auto Buddy Sword",_G.AutoBudySword,function(value)
 		          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
         _G.AutoBudySword = value
         StopTween(_G.AutoBudySword)
@@ -5389,7 +5389,7 @@ else
     iain:Toggle("Auto Buddy Sword Hop",_G.AutoBudySwordHop,function(value)
 		          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
         _G.AutoBudySwordHop = value
 					  end
@@ -5436,7 +5436,7 @@ else
     iain:Toggle("Auto Law Sword ", _G.AutoOderSword,function(value)
      	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	     _G.AutoOderSword = value
         StopTween( _G.AutoOderSword)
@@ -5446,7 +5446,7 @@ else
     iain:Toggle("Auto Oder Sword Hop (New !)", _G.AutoOderSwordHop,function(value)
          	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 		 _G.AutoOderSwordHop = value
 						   end
@@ -5585,7 +5585,7 @@ else
     iain:Toggle("Auto Elite Hunter Hop",_G.AutoEliteHunterHop,function(value)
      	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	    _G.AutoEliteHunterHop = value
 					   end
@@ -5596,7 +5596,7 @@ else
     iain:Toggle("Auto Hallow Scythe",_G.AutoFarmBossHallow,function(value)
        	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 	    _G.AutoFarmBossHallow = value
         StopTween(_G.AutoFarmBossHallow)
@@ -5606,7 +5606,7 @@ else
     iain:Toggle("Auto Hallow Scythe Hop",_G.AutoFarmBossHallowHop,function(value)
         	          	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-Text("Select Weapon First")
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
 else
 		_G.AutoFarmBossHallowHop = value
 						  end
@@ -7461,7 +7461,7 @@ spawn(function()
 		end
 	end)
 	
-	Ss:Seperator("Fake Mode")
+	Ss:Seperator("ក្លែងក្លាយ")
 	
 	Ss:Textbox("Fake Level",true,function(value)
         game:GetService("Players").LocalPlayer.Data.Level.Value = value
@@ -7527,7 +7527,7 @@ spawn(function()
         game:GetService("Workspace").Camera.CameraSubject = game:GetService("Players").LocalPlayer.Character.Humanoid
     end)
     
-    P:Toggle("Teleport",false,function(value)
+    P:Toggle("ប្តូរទីតាំង",false,function(value)
         _G.TeleportPly = value
         pcall(function()
             if _G.TeleportPly then
@@ -8623,7 +8623,7 @@ end)
         end)
     end)
     
-    D:Button("Random Fruit",function()
+    D:Button("បើក Fruit 2 ម៉ោងម្តង",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Cousin","Buy")
     end)
     
@@ -9086,7 +9086,7 @@ end)
         end)
     end)
     
-    Misc:Toggle("Remove Fog",RemoveFog,function(value)
+    Misc:Toggle("បិតកុំអោយស្លូ",RemoveFog,function(value)
         RemoveFog = value
         if not RemoveFog then return end
         while RemoveFog do wait()
@@ -9134,37 +9134,37 @@ end)
     game.Players.LocalPlayer.Character.Animate.Disabled = true 
 end)
     
-    Misc:Seperator("ESP GAME")
+    Misc:Seperator("ស្វែងរកអ្វីមួយ")
     
-    Misc:Toggle("ESP Player",false,function(value)
+    Misc:Toggle("រក មនុស្ស",false,function(value)
         ESPPlayer = value
         while ESPPlayer do wait()
             UpdateEspPlayer()
         end
     end)
     
-    Misc:Toggle("ESP Chest",false,function(value)
+    Misc:Toggle("រក ប្រអប់",false,function(value)
         ChestESP = value
         while ChestESP do wait()
             UpdateChestEsp() 
         end
     end)
     
-    Misc:Toggle("ESP Fruit",false,function(value)
+    Misc:Toggle("រក ផ្លែឈឺ",false,function(value)
         DevilFruitESP = value
         while DevilFruitESP do wait()
             UpdateBfEsp() 
         end
     end)
     
-    Misc:Toggle("ESP Flower",false,function(value)
+    Misc:Toggle("រក ផ្កាកូលាប",false,function(value)
         FlowerESP = value
         while FlowerESP do wait()
             UpdateFlowerEsp() 
         end
     end)
     
-    Misc:Toggle("ESP lsland",IslandESP,function(value)
+    Misc:Toggle("រក កោះ",IslandESP,function(value)
         IslandESP = value
         while IslandESP do wait()
             UpdateIslandESP() 
@@ -9283,7 +9283,7 @@ end)
         end
     end)
     
-    Misc:Toggle("Walk on Water",_G.WalkWater,function(value)
+    Misc:Toggle("ដើលើទឹក",_G.WalkWater,function(value)
         _G.WalkWater = value
     end)
     
@@ -9331,5 +9331,4 @@ spawn(function()
         end
     end
 end)
---C
-	 
+--2BK2
