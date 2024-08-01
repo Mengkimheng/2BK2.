@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Blox Fruits Script",
+   Name = "2BK2",
    LoadingTitle = "Rayfield Interface Suite",
    LoadingSubtitle = "by RetributionMK8",
    ConfigurationSaving = {
