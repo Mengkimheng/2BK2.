@@ -22,3 +22,4 @@ Safeplace = true ----------------------------- Safeplace
 Repeat = true --------------------------------- Repeat continues hopping
 WaitTime = 10 ---------------------------------------------------- Set time how much time does the script execute higher number means slow but will not bug out For Synapse only 
 -----------------------------------------------------------------------
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mengkimheng/2BK2./main/Auto%20find%20fruit"))()
