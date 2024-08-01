@@ -186,8 +186,8 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Update = {}
-local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
-
+local pfp = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&"
+height=420&format=png
 function Update:Window(text,logo,keybind)
 	local uihide = false
 	local abc = false
@@ -419,7 +419,7 @@ local ver = Instance.new("TextLabel")
             PageImage.BackgroundTransparency = 1.000
             PageImage.Position = UDim2.new(0, 5, 0, 5)
             PageImage.Size = UDim2.new(0, 19, 0, 19)
-            PageImage.Image = "rbxassetid://"..tostring(icon)
+            PageImage.Image = ""..tostring(icon)
 
 		local MainFramePage = Instance.new("ScrollingFrame")
 		MainFramePage.Name = text.."_Page"
@@ -606,13 +606,13 @@ local ver = Instance.new("TextLabel")
 
 			local account_circle = Instance.new("ImageLabel")
 
-account_circle.Name = "account_circle"
+account_circle.Name = ""
 account_circle.Parent = Toggle
 account_circle.BackgroundTransparency = 1.000
 account_circle.Position = UDim2.new(0, 5, 0, 4)
 account_circle.Size = UDim2.new(0, 24, 0, 21)
 account_circle.ZIndex = 2
-account_circle.Image = "rbxassetid://3926307971"
+account_circle.Image = ""
 account_circle.ImageRectOffset = Vector2.new(124, 204)
 account_circle.ImageRectSize = Vector2.new(36, 36)
 
@@ -715,16 +715,16 @@ account_circle.ImageRectSize = Vector2.new(36, 36)
 			UIPadding.PaddingLeft = UDim.new(0, 5)
 			UIPadding.PaddingTop = UDim.new(0, 5)
 			
-			DropImage.Name = "DropImage"
+			DropImage.Name = ""
 			DropImage.Parent = Dropdown
 			DropImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropImage.BackgroundTransparency = 1.000
 			DropImage.Position = UDim2.new(0, 445, 0, 6)
 			DropImage.Rotation = 180.000
 			DropImage.Size = UDim2.new(0, 20, 0, 20)
-			DropImage.Image = "rbxassetid://6031090990"
+			DropImage.Image = ""
 			
-			DropButton.Name = "DropButton"
+			DropButton.Name = ""
 			DropButton.Parent = Dropdown
 			DropButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 			DropButton.BackgroundTransparency = 1.000
@@ -737,7 +737,7 @@ account_circle.ImageRectSize = Vector2.new(36, 36)
 			for i,v in next,option do
 				local Item = Instance.new("TextButton")
 
-				Item.Name = "Item"
+				Item.Name = ""
 				Item.Parent = DropScroll
 				Item.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Item.BackgroundTransparency = 1.000
@@ -751,14 +751,14 @@ account_circle.ImageRectSize = Vector2.new(36, 36)
 
 --Properties:
 
-person.Name = "person"
+person.Name = ""
 person.Parent = Item
 person.BackgroundTransparency = 1.000
 person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
 person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
+person.Image = ""
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -832,14 +832,14 @@ person.ImageRectSize = Vector2.new(36, 36)
 
 --Properties:
 
-person.Name = "person"
+person.Name = ""
 person.Parent = Item
 person.BackgroundTransparency = 1.000
 person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
 person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
+person.Image = ""
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -885,14 +885,14 @@ person.ImageRectSize = Vector2.new(36, 36)
 
 --Properties:
 
-person.Name = "person"
+person.Name = ""
 person.Parent = Item
 person.BackgroundTransparency = 1.000
 person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
 person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
+person.Image = ""
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -9332,4 +9332,3 @@ spawn(function()
     end
 end)
 --2BK2
-	 
