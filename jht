@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "2BK2",
+   Name = "Blox Fruits Script",
    LoadingTitle = "Rayfield Interface Suite",
    LoadingSubtitle = "by RetributionMK8",
    ConfigurationSaving = {
@@ -53,8 +53,7 @@ local Button = MainTab:CreateButton({
 
 local Button = MainTab:CreateButton({
    Name = "Farm level",
-   Callback = function()
-      function CheckQuest() 
+      function CheckQuest()
          MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
          if World1 then
              if MyLevel == 1 or MyLevel <= 9 then
@@ -559,5 +558,4 @@ local Button = MainTab:CreateButton({
           end
          end
      end
-   end
 })
