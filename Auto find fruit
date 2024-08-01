@@ -11,11 +11,11 @@ Fruits = {
 "Shadow Fruit",
 "Dragon Fruit" ,
 "Soul Fruit",
-"Leopard Fruit"
+"Leopard Fruit",
 "Kitsune Fruit"
 }
 
-Valuable = {"Dough Fruit","Shadow Fruit","Venom Fruit","Control Fruit","Dragon Fruit","Soul Fruit","Leopard Fruit"} ------ it will stop the script if you got this fruit
+Valuable = {"Dough Fruit","Shadow Fruit","Venom Fruit","Control Fruit","Dragon Fruit","Soul Fruit","Leopard Fruit","Kitsune"} ------ it will stop the script if you got this fruit
 Webhook = "" --------------------------------Optional
 Store = true  --------------------------------Auto Store after it got the fruit
 Safeplace = true ----------------------------- Safeplace 
