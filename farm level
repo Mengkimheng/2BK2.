@@ -1,0 +1,47 @@
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- Auto Attack Script
+function autoAttack()
+    while true do
+        wait(0.5)
+        if humanoid.Health > 0 then
+            -- Find and attack the nearest enemy
+            local nearestEnemy = findNearestEnemy()
+            if nearestEnemy then
+                attack(nearestEnemy)
+            end
+        end
+    end
+end
+
+function findNearestEnemy()
+    local nearestEnemy = nil
+    local shortestDistance = math.huge
+    for _, enemy in pairs(workspace.Enemies:GetChildren()) do
+        local distance = (enemy.Position - character.Position).magnitude
+        if distance < shortestDistance then
+            shortestDistance = distance
+            nearestEnemy = enemy
+        end
+    end
+    return nearestEnemy
+end
+
+function attack(enemy)
+    -- Attack logic (simplified)
+    humanoid:MoveTo(enemy.Position)
+    game.ReplicatedStorage.Events.Attack:FireServer(enemy)
+end
+
+-- Start the auto attack script
+spawn(autoAttack)
+
+-- Teleport Script
+function teleportTo(position)
+    character:SetPrimaryPartCFrame(CFrame.new(position))
+end
+
+-- Teleport to a specific location (example coordinates)
+teleportTo(Vector3.new(100, 50, 200))
