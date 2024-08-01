@@ -47,13 +47,13 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "ដើររកផ្លែឈឺ",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Mengkimheng/2BK2./main/Auto%20find%20fruit"))()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Mengkimheng/2BK2./main/farm%20level'))()
    end,
 })
 
 local Button = MainTab:CreateButton({
-   Name = "ដើរ រកប្រអប់",
+   Name = "Farm level",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/NickelHUBB/SonicTuru/main/ChestFarmOp"))()
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Mengkimheng/2BK2./main/farm%20level'))()
    end,
 })
