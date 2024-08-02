@@ -418,8 +418,7 @@ local ver = Instance.new("TextLabel")
             PageImage.BackgroundTransparency = 1.000
             PageImage.Position = UDim2.new(0, 5, 0, 5)
             PageImage.Size = UDim2.new(0, 19, 0, 19)
-            PageImage.Image = "rbxassetid://"..tostring(icon)
-
+            
 		local MainFramePage = Instance.new("ScrollingFrame")
 		MainFramePage.Name = text.."_Page"
 		MainFramePage.Parent = PageList
@@ -611,7 +610,6 @@ account_circle.BackgroundTransparency = 1.000
 account_circle.Position = UDim2.new(0, 5, 0, 4)
 account_circle.Size = UDim2.new(0, 24, 0, 21)
 account_circle.ZIndex = 2
-account_circle.Image = "rbxassetid://3926307971"
 account_circle.ImageRectOffset = Vector2.new(124, 204)
 account_circle.ImageRectSize = Vector2.new(36, 36)
 
@@ -721,7 +719,6 @@ account_circle.ImageRectSize = Vector2.new(36, 36)
 			DropImage.Position = UDim2.new(0, 445, 0, 6)
 			DropImage.Rotation = 180.000
 			DropImage.Size = UDim2.new(0, 20, 0, 20)
-			DropImage.Image = "rbxassetid://6031090990"
 			
 			DropButton.Name = "DropButton"
 			DropButton.Parent = Dropdown
@@ -757,7 +754,6 @@ person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
 person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -838,7 +834,6 @@ person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
 person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -890,8 +885,7 @@ person.BackgroundTransparency = 1.000
 person.LayoutOrder = 6
 person.Position = UDim2.new(0, 400, 0, 1)
 person.Size = UDim2.new(0, 19, 0, 19)
-person.ZIndex = 2
-person.Image = "rbxassetid://3926307971"
+person.ZIndex = 2w3
 person.ImageTransparency = 0.500
 person.ImageRectOffset = Vector2.new(884, 4)
 person.ImageRectSize = Vector2.new(36, 36)
@@ -2426,7 +2420,7 @@ Misc = Library:Tab("Misc",7044233235)
 set = Library:Tab("Settings",6034509993)
 local logs = game:HttpGet("https://raw.githubusercontent.com/accountnop/magmaisgay/main/logs")
 
-main:Label("Welcome "..game.Players.LocalPlayer.DisplayName.. "To 2BK2")
+main:Label("សួរស្តី"..game.Players.LocalPlayer.DisplayName.. "ពីខ្ញំុ_2BK2")
 main:Label("By Teres")
 main:Label("Ui Lib:???")
 --main:Label("Server Time:")
