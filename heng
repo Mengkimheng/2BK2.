@@ -2555,7 +2555,7 @@ spawn(function()
   end
 end)
     --	Main:Line()
-     Main:Seperator("Auto រក Level")   
+     Main:Seperator("ហ្វាមល្វែល")   
 
 Main:Toggle("ហ្វាមល្វែលដោយខ្លួនអែង",_G.AutoFarm,function(value)
 if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
@@ -2571,7 +2571,7 @@ else
         StopTween(_G.AutoFarm)
 			end
     end)
-	Main:Toggle("រកឆ្អឹង Bone ", _G.Setting_table.Farm_Bone,function(vu)
+	Main:Toggle("ហ្វាម_NPC_ជិតៗ", _G.Setting_table.Farm_Bone,function(vu)
 	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
 Text("រើសបានតែមួយប៉ុណ្ណោះ")
@@ -8744,20 +8744,20 @@ end)
 
     Misc:Seperator("Server")
     
-    Misc:Button("Rejoin Server",function()
+    Misc:Button("ប្តូរ Sever",function()
         game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end)
     
-    Misc:Button("Server Hop",function()
+    Misc:Button("ប្តូរ្ Sever hub",function()
         Hop()
     end)
     
-    Misc:Button("Hop To Lower Player",function()
+    Misc:Button("ដូរ Sever",function()
         getgenv().AutoTeleport = true
         getgenv().DontTeleportTheSameNumber = true 
         getgenv().CopytoClipboard = false
         if not game:IsLoaded() then
-            print("Game is loading waiting...")
+            print("សូមរងចាំ......")
         end
         local maxplayers = math.huge
         local serversmaxplayer;
