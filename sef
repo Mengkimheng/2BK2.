@@ -1,35 +1,112 @@
--- Define a variable to control the script state
-local isFarmingEnabled = false
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
--- Function to start farming
-local function startFarming()
-    print("Farming started...")
-    -- Add code to perform farming actions here
-end
+local Window = Rayfield:CreateWindow({
+   Name = "Blox Fruits Script",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by RetributionMK8",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "RBS"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
 
--- Function to stop farming
-local function stopFarming()
-    print("Farming stopped.")
-    -- Add code to stop farming actions here
-end
+local MainTab = Window:CreateTab("Fruits", nil) -- Title, Image
+local MainSection = MainTab:CreateSection("Blox Fruits")
 
--- Function to toggle farming
-local function toggleFarming()
-    if isFarmingEnabled then
-        stopFarming()
-        isFarmingEnabled = false
-    else
-        startFarming()
-        isFarmingEnabled = true
-    end
-end
+Rayfield:Notify({
+   Title = "You executed the script!",
+   Content = "Thanks for using RetributionMK8's Blox Fruits Script",
+   Duration = 5,
+   Image = nil,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
 
--- Example usage
-print("Press 'T' to toggle farming")
+local Button = MainTab:CreateButton({
+   Name = "Find Fruits",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/20mncKna"))()
+   end,
+})
 
--- Simulate user input (for educational purposes)
-local userInput = 'T' -- Simulate pressing 'T' key
+local Button = Main:Toggle("ហ្វាម_NPC_ជិតៗ", _G.Setting_table.Farm_Bone,function(vu)
+	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
 
-if userInput == 'T' then
-    toggleFarming()
-end
+Text("រើសបានតែមួយប៉ុណ្ណោះ")
+
+else
+ Auto_Farm_Bone = vu
+	_G.Setting_table.Farm_Bone = vu
+	Update_Setting(getgenv()['MyName'])
+	StopTween(Auto_Farm_Bone)
+			end
+    end)
+
+	spawn(function()
+	while wait(.5) do
+		pcall(function()
+			if Auto_Farm_Bone then
+				if not Mix_Farm then
+					if game.Workspace.Enemies:FindFirstChild("Reborn Skeleton [Lv. 1975]") then
+						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("SetSpawnPoint")
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if v.Name == "Reborn Skeleton [Lv. 1975]" and v.Humanoid.Health > 0 then
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								_G.PosMon = v.HumanoidRootPart.CFrame
+								StatrMagnet = true
+								repeat wait(_G.Fast_Delay)
+									EquipWeapon(_G.Setting_table.Weapon)
+									TP(v.HumanoidRootPart.CFrame * CFrame.new(0, 30, 1))
+									AttackNoCD()
+								until v.Humanoid.Health <= 0 or not v.Parent or Mix_Farm or not Auto_Farm_Bone 
+								StatrMagnet = false
+							end
+						end
+					elseif game.ReplicatedStorage:FindFirstChild("Reborn Skeleton [Lv. 1975]") then
+						TP(game.ReplicatedStorage:FindFirstChild("Reborn Skeleton [Lv. 1975]").HumanoidRootPart.CFrame*CFrame.new(0,30,0))
+					else
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if not string.find(v.Name,"Boss") and v.Humanoid.Health > 0 and (v.HumanoidRootPart.Position-game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 1000 then
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								_G.PosMon = v.HumanoidRootPart.CFrame
+								StatrMagnet = true
+								repeat wait(_G.Fast_Delay)
+									EquipWeapon(_G.Setting_table.Weapon)
+									TP(v.HumanoidRootPart.CFrame * CFrame.new(0, 30, 1))
+									AttackNoCD()
+								until v.Humanoid.Health <= 0 or not v.Parent or Mix_Farm or not Auto_Farm_Bone
+								StatrMagnet = false
+							end
+						end
+					end
+				end
+			end
+		end)
+	end
+end)
