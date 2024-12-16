@@ -24,7 +24,7 @@ Toggle.BorderSizePixel = 0
 Toggle.Position = UDim2.new(0, 0, 0.473684222, 0)
 Toggle.Size = UDim2.new(0, 126, 0, 50)
 Toggle.Font = Enum.Font.SourceSans
-Toggle.Text = "Off"
+Toggle.Text = "បិទ"
 Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
 Toggle.TextSize = 40.000
 
@@ -41,7 +41,7 @@ local function BK_Test() -- Toggle.LocalScript
 		if _G.aimbot == false then
 			_G.aimbot = true
 			script.Parent.TextColor3 = Color3.fromRGB(0,170,0)
-			script.Parent.Text = "On"
+			script.Parent.Text = "បើក"
 			function closestplayer()
 				local dist = math.huge -- math.huge means a really large number, 1M+.
 				local target = nil --- nil means no value
@@ -63,7 +63,7 @@ local function BK_Test() -- Toggle.LocalScript
 		else
 			_G.aimbot = false
 			script.Parent.TextColor3 = Color3.fromRGB(255,0,0)
-			script.Parent.Text = "Off"
+			script.Parent.Text = "បិទ"
 		end
 	end)
 	
