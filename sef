@@ -22,11 +22,11 @@ Toggle.Parent = Aimbot
 Toggle.BackgroundColor3 = Color3.fromRGB()
 Toggle.BorderSizePixel = 0
 Toggle.Position = UDim2.new(0, 0, 0.473684222, 0)
-Toggle.Size = UDim2.new(0, 126, 0, 50)
+Toggle.Size = UDim2.new(0, 20, 0, 20 )
 Toggle.Font = Enum.Font.SourceSans
 Toggle.Text = "បិទ"
 Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
-Toggle.TextSize = 40.000
+Toggle.TextSize = 20.00
 
 -- Scripts:
 
